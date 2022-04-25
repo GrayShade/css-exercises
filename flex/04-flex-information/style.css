@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center; /* official solution did this instead of using flex to center text. So did I afterwards . It required horizontal alignment of items too anyway. Plus that caused content inside image blocks to not center strangely. */
 }
 
 img {
@@ -7,9 +8,21 @@ img {
   height: 100px;
 }
 
+.images {
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+}
+
+.image {
+  width: 200px;
+
+}
+
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px;
 }
 
 /* do not edit this footer */

@@ -1,6 +1,9 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -9,11 +12,17 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin: 10px;
 }
 
 ul {
   /* this removes the dots on the list items*/
+  display: flex;
   list-style-type: none;
+  padding: 0px 10px;
+  /*to use justify-content for li elements property, widening container: */
+  width:220px; 
+  justify-content: space-between; /* official solution used gap here for this purpose. I forgot it existed */ 
 }
 
 a {
